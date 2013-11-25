@@ -1,5 +1,5 @@
 //
-//  PINVC.h
+//  OverviewVC.h
 //  com.suruga.Housing
 //
 //  Created by yasho on 11/25/13.
@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "WelcomeVC.h"
 
-@interface PINVC : UIViewController
+@interface OverviewVC : UIViewController
 @property (nonatomic,weak) id<messageLabelDelegate>delegate;
 @end

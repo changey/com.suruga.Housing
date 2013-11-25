@@ -1,2 +1,15 @@
-"PINVC.title" = "Welcome!";
-"PINVC.explanation" = "Welcome to bla bla bla.";
+"Welcome.title" = "Hello!";
+"Welcome.message" = "You're about to enter a prototype app developed by Suruga Bank.\n\nThis app is only accessible to participants of a currently ongoing market research study in Japan.\n\nIf you are part of this study, please keep going in this guide!";
+
+"Overview.title" = "Overview";
+"Overview.message" = "This app is meant to assist you in finding a place to live.\n\nImagine you are a person looking to rent or buy a house. You would be searching for a place within certain financial and geographic restrictions. \n\nIn this app, you will be presented with 3 tasks to simulate this process.";
+
+"Tasks.title" = "Tasks";
+"Tasks.message" = "The task are 1) setting preferences 2) browsing houses and 3) making financial comparisons.\n\nThe whole app experience should take 10 minutes\n\nPlease look for the \"Guide\" tab throughout your experience to get detailed instructions.";
+
+"PIN.title" = "PIN";
+"PIN.direction" = "To enter the app, please type the PIN given to you on the online survey.\n\nIf you have any troubles, please contact suruga@mit.edu.";
+
+"Alert.wrongPIN.title" = "PIN Incorrect";
+"Alert.wrongPIN.message" = "Unfortunately the PIN you entered is incorrect. Please try again. If the situation persists, please contact suruga@mit.edu.";
+"Alert.wrongPIN.ok" = "OK";
