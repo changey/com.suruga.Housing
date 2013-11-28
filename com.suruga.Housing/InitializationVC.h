@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Delegates.h"
 #import "WelcomeVC.h"
 #import "OverviewVC.h"
 #import "TasksVC.h"
 #import "PINVC.h"
+
 
 
 @interface InitializationVC : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate, messageLabelDelegate>

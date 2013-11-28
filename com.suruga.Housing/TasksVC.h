@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WelcomeVC.h"
+#import "Delegates.h"
 
 @interface TasksVC : UIViewController
 @property (nonatomic,weak) id<messageLabelDelegate>delegate;

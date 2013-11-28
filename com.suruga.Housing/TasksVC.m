@@ -27,7 +27,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self setPermUI];
+}
+
+-(void) setPermUI
+{
+    NSString *key = [NSString stringWithFormat:@"Tasks.message"];
+    self.message.text = [NSString stringWithFormat:NSLocalizedString(key,nil)];
+    self.message.numberOfLines = 0;
+    [self.message sizeToFit];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setTempUI];
+}
+
+- (void)setTempUI
+{
+    [self.delegate setNavBar:@"Tasks"];
 }
 
 - (void)didReceiveMemoryWarning

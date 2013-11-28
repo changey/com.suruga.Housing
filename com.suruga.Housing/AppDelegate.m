@@ -7,12 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "AppStagesController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [AppStagesController addNotificationListeners];
     return YES;
 }
 							

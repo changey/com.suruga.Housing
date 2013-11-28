@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Delegates.h"
 
 @interface AppStagesController : NSObject
-
++(void) addNotificationListeners;
 @end

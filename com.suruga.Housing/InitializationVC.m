@@ -25,10 +25,8 @@
 
 @implementation InitializationVC
 
--(void)setLabel:(UILabel *)label ofVC:(NSString *)vc{
-    NSString *key = [NSString stringWithFormat:@"%@.message",vc];
-    label.text = [NSString stringWithFormat:NSLocalizedString(key,nil)];
-
+-(void)setNavBar:(NSString *)title{
+        self.navBarTitle.title = title;
 }
 
 
@@ -44,19 +42,28 @@
 -(void)setUI
 {
     self.surugaBackgroundLogo.layer.opacity=0.05;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(skipInitialization)
+                                                 name:userIsAuthenticated
+                                               object:nil];
+
 }
 
+-(void)skipInitialization{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (void)instantiateViewControllersFromStoryboard
 {
-    UIViewController *page1 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Welcome"];
-    
-    UIViewController *page2 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Overview"];
-    
-    UIViewController *page3 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Tasks"];
-    
-    UIViewController *page4 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"PIN"];
-    
+    WelcomeVC *page1 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Welcome"];
+    page1.delegate = self;
+    OverviewVC *page2 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Overview"];
+    page2.delegate = self;
+    TasksVC *page3 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"Tasks"];
+    page3.delegate = self;
+    PINVC *page4 = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"PIN"];
+    page4.delegate = self;
     // load the view controllers in our pages array
     self.pages = [[NSArray alloc] initWithObjects:page1, page2, page3, page4, nil];
 

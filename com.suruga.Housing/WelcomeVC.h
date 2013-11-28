@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol messageLabelDelegate <NSObject>
--(void)setLabel:(UILabel *)label ofVC:(NSString *)vc;
+#import "Delegates.h"
 
-@end
 @interface WelcomeVC : UIViewController
 @property (nonatomic,weak) id<messageLabelDelegate>delegate;
 @end

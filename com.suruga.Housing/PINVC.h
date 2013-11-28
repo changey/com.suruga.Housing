@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WelcomeVC.h"
+#import "Delegates.h"
 
 @interface PINVC : UIViewController
 @property (nonatomic,weak) id<messageLabelDelegate>delegate;

@@ -9,20 +9,36 @@
 #import "WelcomeVC.h"
 
 @interface WelcomeVC ()
-@property (weak, nonatomic) IBOutlet UILabel *welcomeMessage;
+@property (weak, nonatomic) IBOutlet UILabel *message;
 
 @end
 
 @implementation WelcomeVC
 
+
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self setUI];
+    [self setPermUI];
 }
 
-- (void)setUI
+-(void) setPermUI
 {
-    [self.delegate setLabel:self.welcomeMessage ofVC:@"Welcome"];
+    NSString *key = [NSString stringWithFormat:@"Welcome.message"];
+    self.message.text = [NSString stringWithFormat:NSLocalizedString(key,nil)];
+    self.message.numberOfLines = 0;
+    [self.message sizeToFit];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self setTempUI];
+}
+
+- (void)setTempUI
+{
+
+
+    [self.delegate setNavBar:@"Welcome"];
 }
 
 
