@@ -43,16 +43,16 @@
 {
     self.surugaBackgroundLogo.layer.opacity=0.05;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(skipInitialization)
-                                                 name:userIsAuthenticated
-                                               object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self
+//                                             selector:@selector(skipInitialization)
+//                                                 name:userIsAuthenticated
+//                                               object:nil];
 
 }
-
--(void)skipInitialization{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+//
+//-(void)skipInitialization{
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
 
 - (void)instantiateViewControllersFromStoryboard
 {

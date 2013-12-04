@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-
+#import "InitializationVC.h"
 @interface FirstViewController ()
 
 @end
@@ -17,7 +17,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self performSegueWithIdentifier:@"toInitials" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

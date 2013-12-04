@@ -1,3 +1,4 @@
+//  ORIENTATION
 "Welcome.title" = "Hello!";
 "Welcome.message" = "You're about to enter a prototype app developed by Suruga Bank.\n\nThis app is only accessible to participants of a currently ongoing market research study in Japan.\n\nIf you are part of this study, please keep going in this guide!";
 
@@ -10,6 +11,10 @@
 "PIN.title" = "PIN";
 "PIN.message" = "To enter the app, please type the PIN given to you on the online survey.";
 
+
+//  ALERTS
+"ok" = "OK";
+
 "Task1.title" = "Task 1";
 "Task1.message" = "Your first task involves setting location and budget preferences for your dream house. Go to the \"Guide\" tab for more!";
 
@@ -21,5 +26,7 @@
 
 "TheEnd.title" = "Done!";
 "TheEnd.message" = "";
+
+
 
 

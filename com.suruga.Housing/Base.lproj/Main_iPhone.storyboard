@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eTC-PG-Eyu">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -44,10 +44,13 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="a2_guide_20.png" id="u1e-5L-l1D"/>
+                    <connections>
+                        <segue destination="eTC-PG-Eyu" kind="modal" identifier="toInitials" id="J0X-aT-efA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-775" y="-436"/>
+            <point key="canvasLocation" x="-775" y="-373"/>
         </scene>
         <!--InitializationVC-->
         <scene sceneID="ce1-5h-W9j">
@@ -320,10 +323,10 @@
             </objects>
             <point key="canvasLocation" x="-775" y="1923"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab BarVC-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
-                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                <tabBarController id="8YX-ce-x5E" customClass="TabBarVC" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -335,7 +338,6 @@
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                         <segue destination="AWs-Jb-HeS" kind="relationship" relationship="viewControllers" id="TLf-WB-uQh"/>
                         <segue destination="pmf-n2-IQl" kind="relationship" relationship="viewControllers" id="htw-RX-vK2"/>
-                        <segue destination="eTC-PG-Eyu" kind="modal" identifier="toInitials" id="e6a-iB-NOb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>

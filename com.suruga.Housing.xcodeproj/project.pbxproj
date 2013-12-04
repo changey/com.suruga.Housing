@@ -29,7 +29,6 @@
 		3344F94A18405DB7009C462E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3344F94818405DB7009C462E /* InfoPlist.strings */; };
 		3344F94C18405DB7009C462E /* com_suruga_HousingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344F94B18405DB7009C462E /* com_suruga_HousingTests.m */; };
 		3344F95618405E47009C462E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3344F95518405E47009C462E /* CoreData.framework */; };
-		3344F9A4184063D8009C462E /* pinacolada.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344F9A3184063D8009C462E /* pinacolada.m */; };
 		3344F9A618406593009C462E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3344F9A518406593009C462E /* Localizable.strings */; };
 		3344F9AD18406EFC009C462E /* AppStagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3344F9AC18406EFC009C462E /* AppStagesController.m */; };
 		33A63AE11842A05200F48EBB /* TabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A63AE01842A05200F48EBB /* TabBarVC.m */; };
@@ -83,8 +82,6 @@
 		3344F94918405DB7009C462E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3344F94B18405DB7009C462E /* com_suruga_HousingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_suruga_HousingTests.m; sourceTree = "<group>"; };
 		3344F95518405E47009C462E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		3344F9A2184063D8009C462E /* pinacolada.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinacolada.h; sourceTree = "<group>"; };
-		3344F9A3184063D8009C462E /* pinacolada.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinacolada.m; sourceTree = "<group>"; };
 		3344F9A518406593009C462E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3344F9AB18406EFC009C462E /* AppStagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStagesController.h; sourceTree = "<group>"; };
 		3344F9AC18406EFC009C462E /* AppStagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStagesController.m; sourceTree = "<group>"; };
@@ -190,8 +187,6 @@
 				3344F93818405DB7009C462E /* Images.xcassets */,
 				33A63ADF1842A05200F48EBB /* TabBarVC.h */,
 				33A63AE01842A05200F48EBB /* TabBarVC.m */,
-				3344F9A2184063D8009C462E /* pinacolada.h */,
-				3344F9A3184063D8009C462E /* pinacolada.m */,
 				33A63AE21842A07000F48EBB /* ViewControllers */,
 				3344F92118405DB7009C462E /* Supporting Files */,
 			);
@@ -379,7 +374,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3344F9A4184063D8009C462E /* pinacolada.m in Sources */,
 				3344F93718405DB7009C462E /* SecondViewController.m in Sources */,
 				33A63AE11842A05200F48EBB /* TabBarVC.m in Sources */,
 				3344F92B18405DB7009C462E /* AppDelegate.m in Sources */,

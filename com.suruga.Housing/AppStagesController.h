@@ -11,4 +11,5 @@
 
 @interface AppStagesController : NSObject
 +(void) addNotificationListeners;
+
 @end

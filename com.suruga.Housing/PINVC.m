@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *message;
 @property (weak, nonatomic) IBOutlet UIImageView *checkImage;
 @property (weak, nonatomic) IBOutlet UITextField *pinText;
+#define PIN_MAX_LENGTH 6
+
 @end
 
 @implementation PINVC
@@ -67,6 +69,11 @@
     [[NSNotificationCenter defaultCenter]
      postNotificationName:userIsAuthenticated
      object:nil];
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    NSUInteger newLength = [textField.text length] + [string length] - range.length;
+    return (newLength > PIN_MAX_LENGTH) ? NO : YES;
 }
 
 - (IBAction)pinChanged:(id)sender {

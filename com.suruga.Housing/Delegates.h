@@ -15,7 +15,6 @@
 
 @interface Delegates : NSObject
 
-
 //Notification Names
 #define userIsAuthenticated @"userIsAuthenticated"
 #define appStateChange @"appStateChange"
