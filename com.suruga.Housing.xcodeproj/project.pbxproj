@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3F318618500A9D003D931B /* CitySettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F317D18500A9D003D931B /* CitySettingsVC.m */; };
+		0A3F318718500A9D003D931B /* InterestedInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F317F18500A9D003D931B /* InterestedInVC.m */; };
+		0A3F318818500A9D003D931B /* MonthlyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F318118500A9D003D931B /* MonthlyVC.m */; };
+		0A3F318918500A9D003D931B /* SavingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F318318500A9D003D931B /* SavingsVC.m */; };
+		0A3F318A18500A9D003D931B /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F318518500A9D003D931B /* SettingsVC.m */; };
 		3311F633184617DD00E283B9 /* Check-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 3311F631184617DD00E283B9 /* Check-128.png */; };
 		3311F634184617DD00E283B9 /* Delete-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 3311F632184617DD00E283B9 /* Delete-128.png */; };
 		331871A918474A0200E8F0DC /* a2_guide_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 331871A518474A0200E8F0DC /* a2_guide_20.png */; };
@@ -53,6 +58,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3F317C18500A9D003D931B /* CitySettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySettingsVC.h; sourceTree = "<group>"; };
+		0A3F317D18500A9D003D931B /* CitySettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySettingsVC.m; sourceTree = "<group>"; };
+		0A3F317E18500A9D003D931B /* InterestedInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestedInVC.h; sourceTree = "<group>"; };
+		0A3F317F18500A9D003D931B /* InterestedInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestedInVC.m; sourceTree = "<group>"; };
+		0A3F318018500A9D003D931B /* MonthlyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthlyVC.h; sourceTree = "<group>"; };
+		0A3F318118500A9D003D931B /* MonthlyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthlyVC.m; sourceTree = "<group>"; };
+		0A3F318218500A9D003D931B /* SavingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavingsVC.h; sourceTree = "<group>"; };
+		0A3F318318500A9D003D931B /* SavingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SavingsVC.m; sourceTree = "<group>"; };
+		0A3F318418500A9D003D931B /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		0A3F318518500A9D003D931B /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		3311F62E184612A100E283B9 /* Delegates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Delegates.h; sourceTree = "<group>"; };
 		3311F631184617DD00E283B9 /* Check-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Check-128.png"; path = "../Check-128.png"; sourceTree = "<group>"; };
 		3311F632184617DD00E283B9 /* Delete-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Delete-128.png"; path = "../Delete-128.png"; sourceTree = "<group>"; };
@@ -127,6 +142,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3F317B18500A9D003D931B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F317C18500A9D003D931B /* CitySettingsVC.h */,
+				0A3F317D18500A9D003D931B /* CitySettingsVC.m */,
+				0A3F317E18500A9D003D931B /* InterestedInVC.h */,
+				0A3F317F18500A9D003D931B /* InterestedInVC.m */,
+				0A3F318018500A9D003D931B /* MonthlyVC.h */,
+				0A3F318118500A9D003D931B /* MonthlyVC.m */,
+				0A3F318218500A9D003D931B /* SavingsVC.h */,
+				0A3F318318500A9D003D931B /* SavingsVC.m */,
+				0A3F318418500A9D003D931B /* SettingsVC.h */,
+				0A3F318518500A9D003D931B /* SettingsVC.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		331871AD18474A0800E8F0DC /* TabBarLogos */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +286,7 @@
 		33A63AE21842A07000F48EBB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A3F317B18500A9D003D931B /* Settings */,
 				33A6F1DC1842FF70006B7B70 /* InitializationVC.h */,
 				33A6F1DD1842FF70006B7B70 /* InitializationVC.m */,
 				33A6F1E518430D6F006B7B70 /* WelcomeVC.h */,
@@ -374,13 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3F318618500A9D003D931B /* CitySettingsVC.m in Sources */,
 				3344F93718405DB7009C462E /* SecondViewController.m in Sources */,
 				33A63AE11842A05200F48EBB /* TabBarVC.m in Sources */,
 				3344F92B18405DB7009C462E /* AppDelegate.m in Sources */,
+				0A3F318718500A9D003D931B /* InterestedInVC.m in Sources */,
+				0A3F318A18500A9D003D931B /* SettingsVC.m in Sources */,
 				33A6F1DE1842FF70006B7B70 /* InitializationVC.m in Sources */,
 				33A6F1F0184322C5006B7B70 /* TasksVC.m in Sources */,
 				3344F93418405DB7009C462E /* FirstViewController.m in Sources */,
+				0A3F318818500A9D003D931B /* MonthlyVC.m in Sources */,
 				33A6F1ED18432259006B7B70 /* OverviewVC.m in Sources */,
+				0A3F318918500A9D003D931B /* SavingsVC.m in Sources */,
 				33A6F1EA18431601006B7B70 /* PINVC.m in Sources */,
 				33A63AE51842A45F00F48EBB /* Model.xcdatamodeld in Sources */,
 				3344F92718405DB7009C462E /* main.m in Sources */,
