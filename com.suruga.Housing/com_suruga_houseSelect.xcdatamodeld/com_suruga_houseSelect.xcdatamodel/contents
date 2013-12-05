@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GuideLabels" syncable="YES">
+        <attribute name="l1_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l1_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l2_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l2_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l3_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l3_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l4_text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="l4_title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="House" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="availableFor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downPayment" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inComparison" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="layout" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthlyCost" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mortgageLoan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nearestStation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="solution" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeToStation" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="activated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="appState" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityRow" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="interestedIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monthlyBudget" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="oriented" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="savings" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GuideLabels" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="House" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

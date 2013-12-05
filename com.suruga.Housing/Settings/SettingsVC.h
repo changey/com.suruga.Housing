@@ -10,5 +10,5 @@
 
 @interface SettingsVC : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *settingsTable;
-@property (strong) NSManagedObject *user;
+@property (strong) NSManagedObjectModel *user;
 @end

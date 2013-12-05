@@ -11,6 +11,6 @@
 @interface CitySettingsVC : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UITableView *citiesTable;
-@property (strong) NSManagedObject *user;
+@property (strong) NSManagedObjectModel *user;
 
 @end
